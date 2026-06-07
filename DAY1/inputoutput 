@@ -1,0 +1,112 @@
+//input-output
+class Solution {
+    public void printNumber(Scanner sc) {
+    
+    int value = sc.nextInt();
+    System.out.print(value);
+
+    }
+} 
+//if-else
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+         int marks = sc.nextInt();
+         if(marks>80){
+            System.out.print("A");
+
+         }else{
+            System.out.print("B");
+         }
+         sc.close();
+    }
+}
+//while loop
+//A while loop is used when you want to execute a block of code repeatedly as long as a condition is true.
+
+public class Main{
+    public staic void main(String[] args ){
+        int i = 1;
+        while(i<=5){
+            System.out.print(i);
+            i++;
+        }
+    }
+}
+//switch case
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int days = sc.nextInt();
+
+        switch(days) {
+            case 1:
+                System.out.println("Monday");
+                break;
+
+            case 2:
+                System.out.println("Tuesday");
+                break;
+
+            default:
+                System.out.println("Invalid Day");
+        }
+
+        sc.close();
+    }
+}
+//for loop
+public class Main{
+    public static void main(String [] args ){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum =0;
+        for(int i=1;i<n;i++){
+            sum+=i;
+
+        } 
+        System.out.println(sum);
+        sc.close();
+
+    }
+}
+// Java is always pass-by-value. For primitive types, a copy of the actual value is passed. For objects, a copy of the reference (address) is passed. Therefore, object contents can be modified inside methods, but the reference itself cannot be changed for the caller.
+
+// One-Line Trick to Remember
+// Primitive → Copy of data
+// Object → Copy of address
+// Java → Always Pass By Value ✅
+
+class Demo{
+    public static void main(String [] args){
+        int a = 1000;
+        System.out.print(a); //1000
+        int b;
+        b=a;
+        System.out.print(b); //1000
+        b=2000;
+        System.out.print(b);//2000
+        System.out.print(a); //1000
+        
+    }
+}
+class Car{
+    String name;
+    int cost;
+
+}
+class Demo{
+    public static void main(String [] args)
+    {
+        Car a = new Car();
+        a.name = "BMW";
+        a.cost = 75;
+        System.out.print(a.name);//bmw
+        Car b;
+        b=a;
+        System.out.print(b.name);//bmw
+
+    }
+}
